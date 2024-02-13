@@ -1,7 +1,7 @@
-import HelloBootstrap from "./components/HelloBootstrap";
+import JSXVariables from "./components/JSXVariables";
 
 function App() {
-  return <HelloBootstrap/>;
+  return <JSXVariables />;
 }
 
 export default App;
