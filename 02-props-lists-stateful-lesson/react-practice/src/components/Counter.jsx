@@ -1,10 +1,14 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 function Counter() {
   const [count, setCount] = useState(0);
 
   const handleIncrement = () => {
     setCount(count + 1);
+  };
+
+  const handleDecrement = () => {
+    setCount(count - 1);
   };
 
   return (
@@ -16,6 +20,13 @@ function Counter() {
           type="button"
           className="btn btn-primary"
           onClick={handleIncrement}
+        >
+          Increment
+        </button>
+        <button
+          type="button"
+          className="btn btn-primary"
+          onClick={handleDecrement}
         >
           Increment
         </button>
