@@ -1,18 +1,13 @@
-import "./style.css";
-
-function SpongeBobCard() {
+function Card(props) {
   return (
     <div className="card">
       <div className="img-container">
-        <img
-          alt="SpongeBob"
-          src="https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014"
-        />
+        <img alt="SpongeBob" src={props.imgSrc} />
       </div>
       <div className="content">
         <ul>
           <li>
-            <strong>Name:</strong> SpongeBob
+            <strong>Name:</strong> {props.name}
           </li>
           <li>
             <strong>Occupation:</strong> Fry Cook
@@ -26,4 +21,4 @@ function SpongeBobCard() {
   );
 }
 
-export default SpongeBobCard;
+export default Card;
